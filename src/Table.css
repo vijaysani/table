@@ -1,0 +1,96 @@
+.table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: scroll;
+  }
+  
+  .header-row {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    height:30px;
+  }
+  .download-row{
+    height:50px;
+    font-size:20px;
+    font-weight:normal;
+  }
+
+  .column-header {
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+    overflow: scroll; 
+  }
+  
+  .data-list {
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+  
+  .data-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .data-cell {
+    flex: 1;
+    padding: 8px;
+    overflow: scroll;
+  }
+
+  .checkbox-cell input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .data-row:hover {
+    background-color: #f8f8f8;
+    cursor:pointer;
+  }
+  
+  .data-row.selected {
+    background-color: #e2e2e2;
+  }
+  
+  .column-header,
+  .data-cell {
+    text-align: left;
+  }
+  .empty-checkbox{
+    width:25px;
+    height:10px;
+    display:inline-block
+  }
+  .circle{
+    width:10px;
+    border-radius:5px;
+    display:inline-block;
+    height:10px;
+  }
+  .circle.available{
+    background-color: green;
+  }
+  .label-selected{
+    position:relative;
+    left:20px;
+  }
+  img {
+    position:relative;
+    top:0px;
+  }
+  .label-download{
+    position:relative;
+    left:100px;
+  }
+  .label-download a{
+    text-decoration: none;
+  }
+  label{
+    color:#000000;
+  }
+  .no-data{
+    text-align:center;
+  }
